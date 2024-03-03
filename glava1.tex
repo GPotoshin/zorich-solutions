@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[a4paper,left=3cm,right=3cm,top=1cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\setlength{\parindent}{0mm}
+
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\usepackage{unicode-math}
+\setmathfont{Cambria Math}
+
+\title{
+\textit{\small{Георгий Потошин, 2024}}\\
+\vspace{0.3ex}
+\textit{\huge{Зорич I, глава 1}}\vspace{1ex}
+}
+
+\date{\vspace{-10ex}}
+
+\begin{document}
+\maketitle
+
+\section{Логическая символика}
+
+\begin{enumerate}
+    \item \textbf{Логические высказывания и действительность.}
+        \begin{itemize}
+            \item \textbf{"Не"} Возьмём гуся и утку. Утверждение \emph{это гусь}
+                верно относительно гуся, но не утки. Его отрицание \emph{это не
+                гусь} верно относительно утки, но не верно относительно гуся.
+                Тогда будет следующая таблица истинности:\par
+                \begin{center}
+                \begin{tabular}{ |p{2cm}||p{1cm}|p{1cm}| }
+                    \hline
+                    $A$ = \emph{это гусь} & гусь & утка\\
+                    \hline
+                    $A$ & 1 & 0\\
+                    \hline
+                    $\neg A$ & 0 & 1\\
+                    \hline
+                \end{tabular}
+                \end{center}
+            \item \textbf{"И"} Пусть теперь утверждение будет \emph{Черный и
+                гусь} (\textit{Plectropterus gambensis}). Тогда напишем
+                следующую таблицу всевозможных комбинаций:
+                \begin{center}
+                    \begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|}
+                        \hline
+                        & утка & гусь\\
+                        \hline
+                        белый & 0 & 0\\
+                        \hline
+                        черный & 0 & 1\\
+                        \hline
+                    \end{tabular}
+                \end{center}
+            \item \textbf{"Или"} Пусть теперь утверждение будет \emph{Или
+                чёрный или гусь}. Тогда будет следующая таблица:\par
+                \begin{center}
+                    \begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|}
+                        \hline
+                        & утка & гусь\\
+                        \hline
+                        белый & 0 & 1\\
+                        \hline
+                        черный & 1 & 1\\
+                        \hline
+                    \end{tabular}
+                \end{center}
+            \item \textbf{"Следует"} Здесь я ограничусь мыслью, что из правды
+                (мы надеемся) всегда следует правда, а изо лжи можно получить
+                что угодно. Это мотивировано идеей, что правда одна, а лжи
+                много и если бы из правды следовала бы 2 противоположных
+                утверждения, то правды уже не было бы одной, а на лжи ловят
+                часто из-за противоречий. Поэтому такова таблица.
+        \end{itemize}
+\end{enumerate}
+
+\end{document}
